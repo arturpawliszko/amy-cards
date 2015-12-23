@@ -257,6 +257,8 @@ a:focus {
 }
 
 .about-section {
+    width: 100%;
+    padding: 50px 0;
     background: url(/img/redeem-bg.jpg) no-repeat center center scroll;
     background-color: {{ site.color.primary-dark }};
     -webkit-background-size: cover;
