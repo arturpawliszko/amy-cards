@@ -18,8 +18,11 @@ function redeemPrize() {
         case 'MERRYXMAS':
             //alert('You\'ve won!');
             $('#redeem-container').addClass('animated bounceOutLeft');
-            $('#redeem-prize').attr('style', '');
-            $('#redeem-prize').addClass('animated zoomIn');
+            $('#redeem-container').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                $('#redeem-prize').attr('style', '');
+                $('#redeem-container').attr('style', 'display:none');
+                $('#redeem-prize').addClass('animated zoomIn');
+            });
             break;
         default:
             alert('Sorry, that\'s not a correct code');
