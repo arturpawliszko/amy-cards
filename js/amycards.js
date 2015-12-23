@@ -9,14 +9,16 @@ $( "#redeemForm" ).keypress(function(e) {
 });
 
 function redeemPrize() {
-    var code = $('#redeemForm').val();
+    var code = $('#redeemForm').val().toUpperCase();
 
     switch(code) {
         case '':
             alert('Please enter a code!');
             break;
         case 'MERRYXMAS':
-            alert('You\'ve won!');
+            //alert('You\'ve won!');
+            $('#redeem-container').addClass('animated bounceOutLeft');
+            $('#redeem-prize').addClass('animated tada');
             break;
         default:
             alert('Sorry, that\'s not a correct code');
