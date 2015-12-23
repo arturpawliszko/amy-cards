@@ -159,6 +159,10 @@ a:focus {
     font-size: 18px;
 }
 
+#redeemForm {
+    text-align: center;
+}
+
 @media(min-width:767px) {
     .intro {
         height: 100%;
