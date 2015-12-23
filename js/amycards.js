@@ -18,7 +18,7 @@ function redeemPrize() {
         case 'MERRYXMAS':
             //alert('You\'ve won!');
             $('#redeem-container').addClass('animated bounceOutLeft');
-            $('#redeem-prize').addClass('animated tada');
+            $('#redeem-prize').addClass('animated zoomIn');
             break;
         default:
             alert('Sorry, that\'s not a correct code');
