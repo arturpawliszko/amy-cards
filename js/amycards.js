@@ -18,6 +18,7 @@ function redeemPrize() {
         case 'MERRYXMAS':
             //alert('You\'ve won!');
             $('#redeem-container').addClass('animated bounceOutLeft');
+            $('#redeem-prize').attr('style', '');
             $('#redeem-prize').addClass('animated zoomIn');
             break;
         default:
