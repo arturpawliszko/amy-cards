@@ -10,9 +10,13 @@
                 <div class="col-lg-8 col-lg-offset-2" id="redeem-container">
                     <h2>Redeem Your Prize</h2>
                     <p>If you received a winner's card in your pack, simply enter the code below to redeem your prize!</p>
-                    <div class="alert alert-warning alert-dismissible" role="alert">
+                    <div class="alert alert-danger alert-dismissible" id="invalid-code" role="alert" style="display:none">
                       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <strong>No luck!</strong> Unfortunately the code you entered is not valid.
+                      <strong>No luck!</strong> Unfortunately the code you entered is not valid. Please try again.
+                    </div>
+                    <div class="alert alert-warning alert-dismissible" id="no-code" role="alert" style="display:none">
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <strong>What code?!</strong> You can't win without a code, you know! Please try again.
                     </div>
                     <div class="input-group input-group-lg">
                       <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-star"></i></span>

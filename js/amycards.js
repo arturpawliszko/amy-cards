@@ -13,10 +13,14 @@ function redeemPrize() {
 
     switch(code) {
         case '':
-            alert('Please enter a code!');
+            $('#invalid-code').hide();
+            $('#no-code').show();
+            $('#no-code').addClass('animated shake');
             break;
         case 'MERRYXMAS':
             //alert('You\'ve won!');
+            $('#invalid-code').hide();
+            $('#no-code').hide();
             $('#redeem-container').addClass('animated bounceOutLeft');
             $('#redeem-container').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
                 $('#redeem-prize').attr('style', '');
@@ -25,6 +29,8 @@ function redeemPrize() {
             });
             break;
         default:
-            alert('Sorry, that\'s not a correct code');
+            $('#no-code').hide();
+            $('#invalid-code').show();
+            $('#invalid-code').addClass('animated shake');
     }
 }
