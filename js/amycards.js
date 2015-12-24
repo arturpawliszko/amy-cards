@@ -14,7 +14,6 @@ function redeemPrize() {
     switch(code) {
         case '':
             $('#invalid-code').hide();
-            $('#no-code').hide();
             $('#no-code').show();
             $('#no-code').addClass('animated shake');
             break;
@@ -31,7 +30,6 @@ function redeemPrize() {
             break;
         default:
             $('#no-code').hide();
-            $('#invalid-code').hide();
             $('#invalid-code').show();
             $('#invalid-code').addClass('animated shake');
     }
