@@ -1,8 +1,8 @@
-$( "#redeemButton" ).click(function() {
+$("#redeemButton").click(function() {
   redeemPrize();
 });
 
-$( "#redeemForm" ).keypress(function(e) {
+$("#redeemForm").keypress(function(e) {
     if(e.which == 13) {
         redeemPrize();
     }
